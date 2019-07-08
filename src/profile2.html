@@ -1,0 +1,149 @@
+<html>
+
+<head>
+  <title>Volunteer Connect: Profile</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--<link rel="stylesheet" type="text/css" href="main.css" />-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color:#00569E">
+  <!--Nav Bar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #2a2a2b;">
+    <a class="navbar-brand" href="index.html">Volunteer Connect</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+      </div>
+    </div>
+    <!--Only for signed in organizers-->
+    <span class="badge badge-primary badge-pill">3</span>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#Messages">Messages</a>
+    </div>
+    <ul class="navbar-nav" style="margin-left: 2px;">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false"> My Account</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <!-- Edit Profile-->
+
+          <a class="dropdown-item" href="edit_profile2.html">Edit Profile</a>
+          <a class="dropdown-item" href="#">Settings</a>
+          <!--Logout-->
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="login.html">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  </br>
+
+  <div style="margin: 5px;">
+    <!--Welcome Message-->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome PAWS (Chicago)</h1>
+        <p class="lead">You have 3 unread messages</p>
+      </div>
+    </div>
+    <!-- My events-->
+    <h1 style="text-align: center; color: #ffffff;">My Events</h1>
+    <div class="card-group">
+      <div class="card border-dark mb-3" style="width: 18rem;  ">
+        <div class="card-header">March 4, 2019
+          <p class="card-text" style="text-align:right;"><small class="text-muted">Event ID: 001</small></p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Walk a Dog</h5>
+          <p class="card-text">Come to one of our local shelters to walk a dog.</p>
+          <p class="card-text">Family Friendly: YES / Group Friendly: YES / Wheelchair Accessible: NO</p>
+          <!-- Edit event-->
+          <span class="d-inline-block" data-toggle="popover" data-content="Cannot Change an Event that has occured.">
+          </span> <a href="create_event.html" class="btn btn-secondary disabled">Edit Event</a>
+          </span>
+          <a href="view_signups.html" class="btn btn-success">View Signups</a>
+        </div>
+      </div>
+      <div class="card border-dark mb-3" style="width: 18rem;  ">
+        <div class="card-header">March 11, 2019
+          <p class="card-text" style="text-align:right;"><small class="text-muted">Event ID: 002</small></p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adopt a Dog Day</h5>
+          <p class="card-text">Come by for a special celebration as we host an adoption day.</p>
+          <p class="card-text">Family Friendly: YES / Group Friendly: YES / Wheelchair Accessible: YES</p>
+          <!-- Edit event-->
+          <a href="create_event.html" class="btn btn-secondary">Edit Event</a>
+          <a href="view_signups.html" class="btn btn-success">View Signups</a>
+        </div>
+      </div>
+      <div class="card border-dark mb-3" style="width: 18rem;  ">
+        <div class="card-header">March 16, 2019
+          <p class="card-text" style="text-align:right;"><small class="text-muted">Event ID: 003</small></p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Walk a Dog</h5>
+          <p class="card-text">Come to one of our local shelters to walk a dog.</p>
+          <p class="card-text">Family Friendly: YES / Group Friendly: YES / Wheelchair Accessible: NO</p>
+          <!-- Edit event-->
+          <a href="create_event.html" class="btn btn-secondary">Edit Event</a>
+          <a href="view_signups.html" class="btn btn-success">View Signups</a>
+        </div>
+      </div>
+    </div>
+    <!-- Second Row-->
+    <div class="card-group">
+      <div class="card border-dark mb-3" style="width: 18rem;  ">
+        <div class="card-header">March 12, 2019
+          <p class="card-text" style="text-align:right;"><small class="text-muted">Event ID: 004</small></p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Walk a Dog</h5>
+          <p class="card-text">Come to one of our local shelters to walk a dog.</p>
+          <p class="card-text">Family Friendly: YES / Group Friendly: YES / Wheelchair Accessible: NO</p>
+          <!-- Edit event-->
+          <a href="create_event.html" class="btn btn-secondary">Edit Event</a>
+          <a href="view_signups.html" class="btn btn-success">View Signups</a>
+        </div>
+      </div>
+      <div class="card border-dark mb-3" style="width: 18rem;  ">
+        <div class="card-header">March 18, 2019
+          <p class="card-text" style="text-align:right;"><small class="text-muted">Event ID: 005</small></p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Fundraising Dinner</h5>
+          <p class="card-text">Come enjoy a delicous dinner and fun music as we raise money to keep our shelters open. Tickets are
+            $25/person.</p>
+          <p class="card-text">Family Friendly: NO / Group Friendly: YES / Wheelchair Accessible: YES</p>
+          <!-- Edit event-->
+          <a href="create_event.html" class="btn btn-secondary">Edit Event</a>
+          <a href="view_signups.html" class="btn btn-success">View Signups</a>
+        </div>
+      </div>
+      <div class="card text-center border-light mb-3" style=" align-content: center ">
+        <div class="card-body">
+          <!-- Create event-->
+          <a href="create_event.html" class="btn btn-primary">Add Event</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

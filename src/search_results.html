@@ -1,0 +1,246 @@
+<html>
+<head>
+  <title>Search Results</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CSS_files/P6_search.css" />
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #2a2a2b;">
+    <a class="navbar-brand" href="index.html">Volunteer Connect</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Search Button and Input -->
+  <div class="searchwrap">
+    <button class="collapsible">Advanced Search &#43;</button>
+    <div class="content-results">
+      <div class="searchtext">Keyword (optional):</div>
+      <input type="text" class="searchTerm" placeholder="e.g.'Hospital','Animal Shelter'">
+      <div class="searchtext">Start
+        (optional):&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;End
+        (optional):</div>
+      <input type="text" class="searchDate" placeholder="01/01/18">
+      <input type="text" class="searchDate" placeholder="12//31/18">
+    </div>
+    <!-- <input type="text" class="searchTerm" placeholder="What are you looking for?">
+        <input class="zip" name="zip" type="text" pattern="[0-9]*"placeholder="Zipcode"> <br>
+        <button type="submit" class="searchbtn" style="vertical-align:middle"> <span>Search</span>
+          <i class="fa fa-search"></i>
+        </button>-->
+    <!-- Filters -->
+    <!--<div class="filter-text">Filter by</div>-->
+    <div class="btn-grid">
+      <div class="dropdown">
+        <button class="dropbtn">Filter by Interest</button>
+        <div class="dropdown-content">
+          <div id="checkboxes">
+            <label for="outdoors">
+              <input type="checkbox" id="outdoors" onclick="updateInterests('outdoors')" checked />Outdoors</label>
+            <label for="animals">
+              <input type="checkbox" id="animals" onclick="updateInterests('animals')" checked />Animals</label>
+            <label for="education">
+              <input type="checkbox" id="education" onclick="updateInterests('education')" checked />Education</label>
+            <label for="healthcare">
+              <input type="checkbox" id="healthcare" onclick="updateInterests('healthcare')"
+                checked />Healthcare</label>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Additional Filters</button>
+        <div class="dropdown-content">
+          <div id="checkboxes">
+            <label for="groups">
+              <input type="checkbox" id="groups" onclick="updateMoreFilters('groups')" />Allows Groups</label>
+            <label for="family">
+              <input type="checkbox" id="family" onclick="updateMoreFilters('family')" />Family Friendly</label>
+            <label for="accessible">
+              <input type="checkbox" id="accessible" onclick="updateMoreFilters('accessible')" />Wheelchair
+              Accessible</label>
+          </div>
+        </div>
+      </div>
+      <!--
+          <a href="#">Outdoors</a>
+          <a href="#">Animals</a>
+          <a href="#">Group</a>
+        -->
+      <div>
+        <button type="submit" class="filterbtn" onclick="updateFilter()""> <span>Update Search</span></button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!--<div style=" margin-left:15%;padding:1px 16px;height:500px;">-->
+
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+
+          <!-- Results -->
+
+          <!-- Event 1 -->
+          <div class="event-wrapper" id="habitat">
+            <div class="event">
+              <div class="event-image">
+                <img src="images/habitat-for-humanity.jpg" alt="event1">
+              </div>
+              <div class="event-details">
+                <p class="event-name"><b> Build a House</b></p>
+                <p class="event-host"><i>Hosted by Habitat for Humanity</i></p>
+                <p class="event-date">February 30th, 2018</p>
+                <p class="event-time">8:00AM-3:00PM</p>
+                <p class="info">&#x2714; Family Friendly</p>
+                <p class="info">&#x2714; Allows Groups</p>
+              </div>
+              <div>
+                <p class="event-distance">0.3 miles away</p>
+                <a href="habitat_details.html" class="eventbtn"> <span>View Details</span></a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Event 2 -->
+          <div class="event-wrapper" id="ev_shelter">
+            <div class="event">
+              <div class="event-image">
+                <img src="images/evanston_animal.png" alt="event1">
+              </div>
+              <div class="event-details">
+                <p class="event-name"><b>Shelter Renovation</b></p>
+                <p class="event-host"><i>Hosted by Evanston Animal Shelter</i></p>
+                <p class="event-date">March 30th, 2018</p>
+                <p class="event-time">9:00M-3:00PM</p>
+                <p class="info">&#x2714; Allows Groups</p>
+              </div>
+              <div>
+                <p class="event-distance">0.9 miles away</p>
+                <a href="shelter_details.html" class="eventbtn"> <span>View Details</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="event-wrapper" id="paws">
+            <div class="event">
+              <div class="event-image">
+                <img src="images/PAWS.jpg" alt="event1">
+              </div>
+              <div class="event-details">
+                <p class="event-name"><b>Volunteer Day</b></p>
+                <p class="event-host"><i>Hosted by PAWS Chicago</i></p>
+                <p class="event-date">February 30th, 2018</p>
+                <p class="event-time">8:00AM-3:00PM</p>
+                <p class="info">&#x2714; Family Friendly</p>
+                <p class="info">&#x2714; Allows Groups</p>
+              </div>
+              <div>
+                <p class="event-distance">1.2 miles away</p>
+                <a href="paws_details.html" class=" eventbtn"> <span>View Details</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 4 -->
+          <div class="event-wrapper" id="cps">
+            <div class="event">
+              <div class="event-image">
+                <img src="images/cps.png" alt="event3">
+              </div>
+              <div class="event-details">
+                <p class="event-name"><b>Book Drive</b></p>
+                <p class="event-host"><i>Hosted by Chicago Public Schools</i></p>
+                <p class="event-date">February 30th, 2018</p>
+                <p class="event-time">8:00AM-3:00PM</p>
+                <p class="info">&#x2714; Family Friendly</p>
+                <p class="info">&#x2714; Allows Groups</p>
+                <p class="info">&#x2714; Wheelchair Accessible</p>
+              </div>
+              <div>
+                <p class="event-distance">1.9 miles away</p>
+                <a href="cps_details.html" class=" eventbtn"> <span>View Details</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 5 -->
+          <div class="event-wrapper" id="redcross">
+            <div class="event">
+              <div class="event-image">
+                <img src="images/redcross.jpeg" alt="event3">
+              </div>
+              <div class="event-details">
+                <p class="event-name"><b>Blood Donation Drive</b></p>
+                <p class="event-host"><i>Hosted by American Red Cross</i></p>
+                <p class="event-date">February 30th, 2018</p>
+                <p class="event-time">8:00AM-3:00PM</p>
+              </div>
+              <div>
+                <p class="event-distance">2.8 miles away</p>
+                <a href=""" class=" eventbtn"> <span>View Details</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 6 -->
+          <div class="event-wrapper" id="library">
+            <div class="event">
+              <div class="event-image">
+                <img src="images/lib.jpeg" alt="event3">
+              </div>
+              <div class="event-details">
+                <p class="event-name"><b>Annual Literature Festival </b></p>
+                <p class="event-host"><i>Hosted by Evanston Public Library</i></p>
+                <p class="event-date">February 30th, 2018</p>
+                <p class="event-time">8:00AM-3:00PM</p>
+                <p class="info">&#x2714; Wheelchair Accessible</p>
+              </div>
+              <div>
+                <p class="event-distance">3.4 miles away</p>
+                <a href=""" class=" eventbtn"> <span>View Details</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 7 -->
+          <div class="event-wrapper" id="symphony">
+            <div class="event">
+              <div class="event-image">
+                <img src="images/symphony.png" alt="event3">
+              </div>
+              <div class="event-details">
+                <p class="event-name"><b>Volunteer Orientation</b></p>
+                <p class="event-host"><i>Symphony of Evanston</i></p>
+                <p class="event-date">February 30th, 2018</p>
+                <p class="event-time">8:00AM-3:00PM</p>
+                <p class="info">&#x2714; Allows Groups</p>
+                <p class="info">&#x2714; Wheelchair Accessible</p>
+              </div>
+              <div>
+                <p class="event-distance">5.6 miles away</p>
+                <a href="" class=" eventbtn"> <span>View Details</span></a>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+<script src="JS_files/search_results.js"></script>
+</html>

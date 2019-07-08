@@ -1,0 +1,26 @@
+/*Begin Page Styling */
+body {
+    background-color: #00569E ;    /*#FF9800*/
+    color: #fff;
+    margin: 0;
+    font-family: Avenir, sans-serif;
+}
+
+.eventbtn {
+  width: 200px;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* End Page Styling */

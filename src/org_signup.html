@@ -1,0 +1,104 @@
+<html>
+<head>
+  <title>Organizer Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CSS_files/form.css"/>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #2a2a2b;">
+  <a class="navbar-brand" href="index.html">Volunteer Connect</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home</a>
+      <a class="nav-item nav-link" href="about.html">About</a>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <h2>Organizer Sign Up</h2>
+  <form class="form-horizontal" id="signup" action="org_signup.html" oninput='pwd2.setCustomValidity(pwd.value != pwd2.value ? "Passwords do not match." : "");pwd.setCustomValidity(pwd.value.length < 8 ? "Password must be at least 8 characters." : "");zip.setCustomValidity(zip.value.length != 5 ? "Zipcode must be 5 digits" : "");' onsubmit= "return signup()">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Name:</label>
+      <div class="col-sm-10">
+        <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Organization Name:</label>
+      <div class="col-sm-10">
+        <input type="name" class="form-control" id="name" placeholder="Enter Organization Name" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Confirm Password:</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="pwd2" placeholder="Confirm password" name="pwd2">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="zip">Home ZIP Code:</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="zip" placeholder="Home ZIP" name="zip">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+         <button onclick="signup()">Sign Up</button>
+         <!--<a href="profile.html" type="submit" class="btn btn-default">Create Account</a>-->
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+function myFunction(){
+  name = document.getElementById("name").value;
+  if(name == ""){
+    alert("ERROR: No Name entered");
+  }
+  else{
+    alert('Thanks for your registration! Directing you back to the home page');
+    window.location.href="index.html";
+  }
+}
+
+function signup() {
+          var input = document.getElementById("email").value;
+              document.getElementById("signup").action = "profile.html";
+    }
+
+</script>
+</body>
+</html>

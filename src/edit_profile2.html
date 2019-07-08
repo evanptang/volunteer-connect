@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title>Volunteer Connect: Edit Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="main.css" />-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color:#00569E">
+    <!--Nav Bar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #2a2a2b;">
+        <a class="navbar-brand" href="index.html">Volunteer Connect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="profile2.html">Home</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+            </div>
+        </div>
+        <!--Only for signed in organizers-->
+        <span class="badge badge-primary badge-pill">3</span>
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#Messages">Messages</a>
+        </div>
+        <ul class="navbar-nav" style="margin-left: 2px;">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> My Account</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <!-- Edit Profile-->
+
+                    <a class="dropdown-item" href="edit_profile2.html">Edit Profile</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <!--Logout-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    </br>
+    </br>
+    </br>
+    </br>
+    <a href="profile2.html" class="btn btn-info btn-lg">Return</a>
+    <h1 style="text-align: center; color: aliceblue">Edit Profile</h1>
+    <form style="align-content: center; margin-left: 10%; margin-right: 10%;">
+        <!-- Contact Info-->
+        <div class="card" style="margin-bottom: 1%;">
+            <h5 class="card-header">Contact Information</h5>
+            <div class="card-body">
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label>Organization Name</label>
+                        <input type="text" class="form-control" value="PAWS(Chicago)">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label>E-mail</label>
+                        <input type="text" class="form-control" value="contact@pawschicago.com">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label>Phone</label>
+                        <input type="text" class="form-control" value="123-456-789">
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Save</a>
+            </div>
+        </div>
+        <!--Links/ Social Media-->
+        <div class="card" style="margin-bottom: 1%;">
+            <h5 class="card-header">Social Connections</h5>
+            <div class="card-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Facebook</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" value="http://facebook.com/">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Twitter</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" value="http://twitter.com/">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Linkedin</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" value="http://linkedin.com/">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Website</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" value="http://pawschicago.org/">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Instagram</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" value="http://instagram.com/">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Save</a>
+            </div>
+        </div>
+        <!--Location-->
+        <div class="card" style="margin-bottom: 1%;">
+            <h5 class="card-header">Location</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Room #">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Chicago">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <input type="text" class="form-control" id="inputState" placeholder="Illinois">
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="123456">
+                    </div>
+                    <a href="#" class="btn btn-primary">Save</a>
+                </div>
+            </div>
+        </div>
+        <!--Biography-->
+        <div class="card" style="margin-bottom: 1%;">
+            <h5 class="card-header">Biography</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                </div>
+                <a href="#" class="btn btn-primary">Save</a>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

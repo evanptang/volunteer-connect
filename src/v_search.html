@@ -1,0 +1,61 @@
+<html>
+  <head>
+      <title>Search Home</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="CSS_files/p6_search.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2a2a2b;">
+  <a class="navbar-brand" href="index.html">Volunteer Connect</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html">Home</a>
+      <a class="nav-item nav-link" href="about.html">About</a>
+      <!--<a class="nav-item nav-link disabled" href="contact.html">Contact</a>-->
+    </div>
+  </div>
+</nav>
+</br>
+    <div class="title"> Welcome Volunteer</div>
+    <!--<div class = "title"> Please enter your ZIP Code </div>-->
+    <div class="searchwrap-intial">
+        <!--<input type="text" class="searchTerm" placeholder="What are you looking for?">-->
+        <div class="searchtext">Location (required):</div>
+        <input class="zip" name="zip" type="text" pattern="[0-9]*"placeholder="e.g. Chicago,IL"> <br>
+        <button class="collapsible-initial">Advanced Search &#43;</button>
+        <div class="content">
+        <div class="searchtext">Keyword (optional):</div>
+        <input type="text" class="searchTerm" placeholder="e.g.'Hospital','Animal Shelter'">
+        <div class="searchtext">Start (optional):&ensp;&ensp;&ensp;&ensp;&ensp;End (optional):</div>
+        <input type="text" class="searchDate" placeholder="01/01/18">
+        <!--<div class="searchdatetext">End Date:</div>-->
+        <input type="text" class="searchDate" placeholder="12//31/18">
+        </div>
+        <a href="search_results.html">
+        <button type="submit" class="searchbtn" style="vertical-align:middle"> <span>Search</span>
+          <i class="fa fa-search"></i>
+        </button>
+        </a>
+    </div>
+    </div>
+  <script>
+var coll = document.getElementsByClassName("collapsible-initial");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
